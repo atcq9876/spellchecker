@@ -9,7 +9,6 @@ class SpellChecker {
     const singleSpaceInput = this._input.replace(/  +/g, ' ');
     const words = singleSpaceInput.split(' ');
     let outputArray = [];
-
     words.forEach((word) => {
       const lowerCaseWordWithNoPunctuation =
         word.toLowerCase()
