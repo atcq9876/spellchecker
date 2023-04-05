@@ -42,4 +42,10 @@ describe('SpellChecker', () => {
       new SpellChecker(10);
     }).toThrow('Input must be a string');
   })
+
+  test(('throws error if input is an empty string'), () => {
+    expect(() => {
+      new SpellChecker('');
+    }).toThrow('No input has been supplied');
+  })
 })
