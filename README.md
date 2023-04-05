@@ -11,9 +11,9 @@ See below for example input and output of the program:
 __Input__                |   __Output__
 -------------------------|--------------------------------------------
 "words"                  |  "words"
-"wrds"                   |  `~wrds~`
+"wrds"                   |  "`~wrds~`"
 "wOrDs"                  |  "wOrDs"
-"One twwo three"         |  `One ~twwo~ three`
+"One twwo three"         |  "`One ~twwo~ three`"
 "One    Two"             |  "One Two"
 "Test. One, two, three." |  "Test. One, two, three."
 ''                       |  Error: "No input has been supplied"
