@@ -6,4 +6,10 @@ describe('SpellChecker', () => {
     
     expect(spellChecker.checkSpelling()).toEqual('test');
   })
+
+  it('highlights an incorrectly spelt word', () => {
+    const spellChecker = new SpellChecker('onne');
+    
+    expect(spellChecker.checkSpelling()).toEqual('~onne~');
+  })
 })

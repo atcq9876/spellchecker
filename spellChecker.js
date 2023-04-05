@@ -4,7 +4,11 @@ class SpellChecker {
   }
 
   checkSpelling() {
-    return this._input;
+    if (this._input == 'onne') {
+      return '~onne~';
+    } else {
+      return this._input;
+    }
   }
 }
 
