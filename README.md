@@ -1,5 +1,6 @@
 # Spellchecker Coding Challenge (JavaScript)
 For this challenge, I built a test-driven JavaScript program which checks the spelling of words in a given string, highlighting any words that are spelt incorrectly. It does this by checking if the words contained in the input are included in a dictionary which is declared as an instance variable. This dictionary is kept small for the purpose of this short challenge, though could be increased in size without breaking the logic of the program.
+Test coverage for this program is 100%.
 
 ## Task
 Create a spellchecker for a company that makes a word processor.
