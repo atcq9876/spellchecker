@@ -11,7 +11,8 @@ class SpellChecker {
     let outputArray = [];
 
     words.forEach((word) => {
-      if (this._dictionary.includes(word.toLowerCase())) {
+      const lowerCaseWordWithNoPunctuation = word.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+      if (this._dictionary.includes(lowerCaseWordWithNoPunctuation)) {
         outputArray.push(word);
       } else {
         outputArray.push(`~${word}~`);

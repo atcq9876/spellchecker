@@ -54,4 +54,10 @@ describe('SpellChecker', () => {
     
     expect(spellChecker.checkSpelling()).toEqual('Test two ~incorrectt~');
   })
+
+  it('handles input containing punctuation', () => {
+    const spellChecker = new SpellChecker('One, two. blah');
+    
+    expect(spellChecker.checkSpelling()).toEqual('One, two. ~blah~');
+  })
 })
