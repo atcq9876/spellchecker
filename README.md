@@ -1,30 +1,20 @@
-# TBC Coding Challenge (JavaScript)
-For this challenge, I built a test-driven JavaScript program which...
-
-
+# Spellchecker Coding Challenge (JavaScript)
+For this challenge, I built a test-driven JavaScript program which checks the spelling of words in a given string, highlighting any words that are spelt incorrectly. It does this by checking if the words contained in the input are included in a dictionary which is declared as an instance variable. This dictionary is kept small for the purpose of this short challenge, though could be increased in size without breaking the logic of the program.
 
 ## Task
-This is for a company that makes a word processor
-Spellchecker
-Input is a string, output is a string
-If string contains incorrectly spelt word(s), this/these should be highlighted
-- E.g., ~misspelling~
+Create a spellchecker for a company that makes a word processor.
+You will be given a string of a word or several words, and will return a string of these words, highlighting any words that are spelt incorrectly (e.g., ~testt~).
 
 ## Input/Output Table
 See below for example input and output of the program:
 
-__Input__               |   __Output__
-------------------------|--------------------------------------------
-"words"                 |  "words"
-"wrds"                  |  "~wrds~"
-"wOrDs"                 |  "wOrDs"
-"One twwo three"        |  "One ~twwo~ three"
-''                      |  Error: "No input has been supplied"
-Incorrect data type     |  Error: "Input must be a string"
-
-
-**Extra (still highlight misspelt words):**
-Extra spaces
-"One    Two" | "One    Two"
-Punctuation
+__Input__                |   __Output__
+-------------------------|--------------------------------------------
+"words"                  |  "words"
+"wrds"                   |  "~wrds~"
+"wOrDs"                  |  "wOrDs"
+"One twwo three"         |  "One ~twwo~ three"
+"One    Two"             |  "One Two"
 "Test. One, two, three." | "Test. One, two, three."
+''                       |  Error: "No input has been supplied"
+Incorrect data type      |  Error: "Input must be a string"
