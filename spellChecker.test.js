@@ -24,4 +24,10 @@ describe('SpellChecker', () => {
     
     expect(spellChecker.checkSpelling()).toEqual('One ~twwo~');
   })
+
+  it('handles another two word string', () => {
+    const spellChecker = new SpellChecker('Test two');
+    
+    expect(spellChecker.checkSpelling()).toEqual('Test two');
+  })
 })
