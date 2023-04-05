@@ -1,15 +1,14 @@
 class SpellChecker {
   constructor(input) {
     this._input = input;
+    this._dictionary = ['test', 'one', 'two'];
   }
 
   checkSpelling() {
-    if (this._input == 'onne') {
-      return '~onne~';
-    } else if (this._input == 'Twwo') {
-      return '~Twwo~';
-    } else {
+    if (this._dictionary.includes(this._input.toLowerCase())) {
       return this._input;
+    } else {
+      return `~${this._input}~`;
     }
   }
 }
