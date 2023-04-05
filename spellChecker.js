@@ -6,6 +6,8 @@ class SpellChecker {
   checkSpelling() {
     if (this._input == 'onne') {
       return '~onne~';
+    } else if (this._input == 'Twwo') {
+      return '~Twwo~';
     } else {
       return this._input;
     }

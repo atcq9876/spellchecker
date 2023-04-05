@@ -12,4 +12,10 @@ describe('SpellChecker', () => {
     
     expect(spellChecker.checkSpelling()).toEqual('~onne~');
   })
+
+  it('highlights a second incorrectly spelt word', () => {
+    const spellChecker = new SpellChecker('Twwo');
+    
+    expect(spellChecker.checkSpelling()).toEqual('~Twwo~');
+  })
 })
