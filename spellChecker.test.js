@@ -18,4 +18,10 @@ describe('SpellChecker', () => {
     
     expect(spellChecker.checkSpelling()).toEqual('~Twwo~');
   })
+
+  it('highlights a second incorrectly spelt word', () => {
+    const spellChecker = new SpellChecker('One twwo');
+    
+    expect(spellChecker.checkSpelling()).toEqual('One ~twwo~');
+  })
 })
