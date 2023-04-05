@@ -19,7 +19,7 @@ describe('SpellChecker', () => {
     expect(spellChecker.checkSpelling()).toEqual('~Twwo~');
   })
 
-  it('highlights a second incorrectly spelt word', () => {
+  it('handles a two word string', () => {
     const spellChecker = new SpellChecker('One twwo');
     
     expect(spellChecker.checkSpelling()).toEqual('One ~twwo~');
