@@ -30,4 +30,10 @@ describe('SpellChecker', () => {
     
     expect(spellChecker.checkSpelling()).toEqual('Test two');
   })
+
+  it('handles another three word string', () => {
+    const spellChecker = new SpellChecker('Test two incorrectt');
+    
+    expect(spellChecker.checkSpelling()).toEqual('Test two ~incorrectt~');
+  })
 })
