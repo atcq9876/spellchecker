@@ -1,7 +1,6 @@
 class SpellChecker {
   constructor(input) {
-    if (typeof input !== 'string') throw new Error('Input must be a string');
-    if (input == '') throw new Error('No input has been supplied');
+    this.#validateInput(input);
     this._input = input;
     this._dictionary = ['test', 'one', 'two'];
   }
@@ -19,6 +18,14 @@ class SpellChecker {
     })
 
     return outputArray.join(' ');
+  }
+
+  #validateInput(input) {
+    if (typeof input !== 'string') {
+      throw new Error('Input must be a string')
+    } else if (input == '') {
+      throw new Error('No input has been supplied');
+    }
   }
 }
 
