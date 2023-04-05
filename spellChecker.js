@@ -6,7 +6,8 @@ class SpellChecker {
   }
 
   checkSpelling() {
-    const words = this._input.split(' ');
+    const singleSpaceInput = this._input.replace(/  +/g, ' ');
+    const words = singleSpaceInput.split(' ');
     let outputArray = [];
 
     words.forEach((word) => {

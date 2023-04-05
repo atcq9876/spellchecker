@@ -48,4 +48,10 @@ describe('SpellChecker', () => {
       new SpellChecker('');
     }).toThrow('No input has been supplied');
   })
+
+  it('handles multiple spaces between words', () => {
+    const spellChecker = new SpellChecker('Test      two  incorrectt');
+    
+    expect(spellChecker.checkSpelling()).toEqual('Test two ~incorrectt~');
+  })
 })
