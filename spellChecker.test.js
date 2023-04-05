@@ -36,4 +36,10 @@ describe('SpellChecker', () => {
     
     expect(spellChecker.checkSpelling()).toEqual('Test two ~incorrectt~');
   })
+
+  test(('throws error if input is not a string'), () => {
+    expect(() => {
+      new SpellChecker(10);
+    }).toThrow('Input must be a string');
+  })
 })

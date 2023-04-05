@@ -1,5 +1,6 @@
 class SpellChecker {
   constructor(input) {
+    if (typeof input !== 'string') throw new Error('Input must be a string');
     this._input = input;
     this._dictionary = ['test', 'one', 'two'];
   }
