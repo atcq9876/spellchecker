@@ -16,5 +16,5 @@ __Input__                  |   __Output__
 "`One twwo three`"         |  "`One ~twwo~ three`"
 "`One    Two`"             |  "`One Two`"
 "`Test. One, two, three.`" |  "`Test. One, two, three.`"
-''                         |  Error: "`No input has been supplied`"
+""                         |  Error: "`No input has been supplied`"
 Incorrect data type        |  Error: "`Input must be a string`"
